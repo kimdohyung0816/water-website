@@ -1,0 +1,89 @@
+.quiz-menu {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .quiz-menu h2 {
+    font-size: 3rem;           
+    color: #1565c0;
+    margin-bottom: 12px;
+  }
+  
+  .quiz-menu p {
+    font-size: 1.3rem;          
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  .quiz-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;                  
+    flex-wrap: wrap;
+  }
+  
+  .quiz-card {
+    background: #fff;
+    border-radius: 12px;
+    width: 320px;               
+    padding: 40px 30px;         
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform .2s, box-shadow .2s;
+  }
+  
+  .quiz-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .card-icon {
+    font-size: 4rem;           
+    margin-bottom: 20px;
+  }
+  
+  .health-card .card-icon {
+    color: #2e7d32;
+  }
+  
+  .taste-card .card-icon {
+    color: #ef6c00;
+  }
+  
+  .quiz-card h3 {
+    margin: 0 0 16px;
+    font-size: 1.75rem;      
+    color: #333;
+  }
+  
+  .quiz-card p {
+    margin: 0 0 24px;
+    font-size: 1.1rem;        
+    color: #666;
+  }
+  
+  .card-select {
+    display: block;
+    width: 100%;
+    padding: 14px 0;           
+    background-color: #0288d1;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;        
+    cursor: pointer;
+    transition: background-color .2s;
+  }
+  
+  .card-select:hover {
+    background-color: #0277bd;
+  }
+  
+  @media (max-width: 600px) {
+    .quiz-cards {
+      gap: 30px;
+    }
+    .quiz-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }

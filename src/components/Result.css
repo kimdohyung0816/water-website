@@ -1,0 +1,91 @@
+/* src/components/Result.css */
+
+.result-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .result-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1565c0;
+    margin-bottom: 20px;
+  }
+  
+  .result-img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .result-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .brand-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  
+  .brand-card {
+    flex: 0 0 240px;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform .2s;
+  }
+  .brand-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .brand-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .brand-card h4 {
+    margin: 12px 0 8px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .brand-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .result-container button {
+    display: block;
+    width: 240px;
+    margin: 16px auto;
+    background-color: #0288d1;
+    color: #fff;
+    border: none;
+    padding: 16px 0;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color .2s;
+  }
+  .result-container button:hover:not(:disabled) {
+    background-color: #0277bd;
+  }
+  .result-container button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: default;
+  }
+  

@@ -1,0 +1,80 @@
+/* src/components/Quiz.css */
+
+.quiz-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 32px;
+  }
+  
+  /* 질문 번호 및 텍스트 강조 */
+  .quiz-container h3 {
+    font-size: 2rem;           /* 더 큰 폰트 사이즈 */
+    font-weight: 600;          /* 볼드체 */
+    color: #1565c0;            /* 강조색 (파란 계열) */
+    margin-bottom: 16px;
+  }
+  
+  .quiz-container p {
+    font-size: 1.3rem;         /* 본문 질문 크기 증가 */
+    color: #333;
+    margin-bottom: 24px;
+  }
+  
+  .options {
+    display: grid;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .options label {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    min-height: 60px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  
+  .options input[type="radio"] {
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
+  .options label:hover,
+  .options label.selected {
+    background: #e3f2fd;
+    border-color: #2196f3;
+  }
+  
+  .quiz-nav {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .quiz-nav button {
+    background-color: #0288d1;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .quiz-nav button:hover:not(:disabled) {
+    background-color: #0277bd;
+  }
+  
+  .quiz-nav button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: default;
+  }
+  

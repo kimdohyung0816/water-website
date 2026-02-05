@@ -1,0 +1,96 @@
+.detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 32px;
+  padding: 8px 16px;
+  background-color: #1565c0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.back-button:hover {
+  background-color: #0e3a84;
+}
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.detail-img {
+  flex: 1 1 300px;
+  max-width: 600px;    /* 선명도 유지를 위해 캔버스보다 더 크게 늘리지 않음 */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.detail-info {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-title {
+  font-size: 2rem;
+  color: #1565c0;
+  margin: 0 0 16px;
+}
+
+.detail-origin,
+.detail-content,
+.detail-ph,
+.detail-price,
+.detail-features {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.detail-features {
+  font-style: italic;
+  background: #f9f9f9;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.buy-link {
+  display: inline-block;
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #0288d1;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.buy-link:hover {
+  background-color: #0277bd;
+}
+.buy-link.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: default;
+}

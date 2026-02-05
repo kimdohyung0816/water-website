@@ -1,0 +1,95 @@
+.detail-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+  
+  .not-found {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 24px;
+  }
+  
+  /* ← 뒤로 가기 버튼 */
+  .back-button {
+    display: inline-block;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+    background-color: #1565c0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #0e3a84;
+  }
+  
+  /* 상세 영역 */
+  .detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: flex-start;
+  }
+  
+  /* 이미지 */
+  .detail-img {
+    flex: 1 1 300px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+  
+  /* 정보 */
+  .detail-info {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail-title {
+    font-size: 2rem;
+    color: #1565c0;
+    margin: 0 0 16px;
+  }
+  
+  .detail-origin,
+  .detail-ph,
+  .detail-desc {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  
+  /* 구매하기 */
+  .buy-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .buy-link:hover {
+    background-color: #0277bd;
+  }
+  
+  /* 구매 불가 상태 */
+  .buy-link.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: default;
+  }
+  

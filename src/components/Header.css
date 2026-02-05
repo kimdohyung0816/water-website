@@ -1,0 +1,63 @@
+.header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+  }
+  
+  .header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    height: 64px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 300px;
+    align-items: center;
+  }
+  
+  .logo {
+    justify-self: start;
+    font-size: 2rem;
+    color: #1565c0;
+    text-decoration: none;
+  }
+  
+  .nav {
+    justify-self: center;
+    display: flex;
+    gap: 24px;
+    
+  }
+  
+  .nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 0;
+  }
+  
+  .nav a:hover {
+    color: #1565c0;
+  }
+  
+  .lang-switch {
+    justify-self: end;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .lang-switch button {
+    border: 1px solid #1565c0;
+    background: transparent;
+    color: #1565c0;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .lang-switch button.active {
+    background: #1565c0;
+    color: #fff;
+  }
+  
